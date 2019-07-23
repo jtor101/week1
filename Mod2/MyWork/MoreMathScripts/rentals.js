@@ -3,7 +3,7 @@
 
 "use strict"
 
-var totalPassengers = 151;
+var totalPassengers = 38;
 
 var vanCost = 250;
 var vanCapacity = 15;
