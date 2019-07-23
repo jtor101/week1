@@ -1,4 +1,4 @@
-// Conversion Tests
+// Conversion Tests - tests various conversion techniques
 // by John Torres
 
 var a = "  101.1  ";
