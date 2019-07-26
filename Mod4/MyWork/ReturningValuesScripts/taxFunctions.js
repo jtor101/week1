@@ -37,8 +37,8 @@ function getFederalTax(grossPay, withholdingCode) {
 }
 
 // User Inputs
-var myGrossPay = 1100;
-var myWithholdingCode = 6;
+var myGrossPay = 111100;
+var myWithholdingCode = 2;
 
 // Function Calls
 var mySocSecTax = getSocSecTax(myGrossPay);

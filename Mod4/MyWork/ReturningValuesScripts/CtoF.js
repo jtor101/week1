@@ -3,14 +3,21 @@
 
 "use strict"
 
-// Celsius To Fahrenheit Conversion Function
-function convertCtoF(myCurrentTemp) {
-    var fahTemp = myCurrentTemp * (9 / 5) + 32;
-    return fahTemp
+let tempCel;
+
+function getCel() {
+    tempCel = Number(document.getElementById("tempC").value);
 }
 
-// Celsius To Fahrenheit Conversion User Input
-var currentTemp = 100;
-var fahTemp = convertCtoF(currentTemp);
+function cToF() {
+    getCel();
+    let celCalc = tempCel * (9 / 5) + 32;
+    document.getElementById("fAns").value = celCalc;
+}
 
-console.log("The temperature is " + fahTemp + " degrees Fahrenheit");
+function init() {
+    const calcBtn = document.getElementById("fCalc");
+    calcBtn.onclick = getCel;
+}
+
+window.onload = init;
